@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TrendingSuggestionsComponent implements OnInit {
 
-  constructor() { }
+  public location: string;
+  public trending: string;
+
+  constructor() { this.location = "Worldwide"; this.trending = "#TestTweet" }
 
   ngOnInit(): void {
   }
