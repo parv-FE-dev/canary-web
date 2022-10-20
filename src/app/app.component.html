@@ -1,7 +1,12 @@
-<div class="flex">
-    <div class="border-r px-[30px]">
+<div>
+    <div class="flex items-start">
         <app-side-bar></app-side-bar>
+        <div class="search-border">
+            <app-home-nav></app-home-nav>
+            <app-tweet-card></app-tweet-card>
+        </div>
+        <app-search-bar></app-search-bar>
     </div>
-    <div class="border-r h-screen"></div>
-    <router-outlet></router-outlet>
 </div>
+
+<router-outlet></router-outlet>
