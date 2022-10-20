@@ -17,7 +17,7 @@ import { SideBarComponent } from './side-bar/side-bar.component';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     RouterModule.forRoot([
-      {path: '', component: ListsComponent},
+      {path: 'list', component: ListsComponent}
     ]),  ],
   providers: [],
   bootstrap: [AppComponent]
