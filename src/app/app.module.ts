@@ -25,7 +25,9 @@ import { TrendingSuggestionsComponent } from './trending-suggestions/trending-su
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     RouterModule.forRoot([
-      {path: 'list', component: ListsComponent}
+      {path: 'list', component: ListsComponent},
+      {path: 'a', component: TweetCardComponent}
+
     ]),  ],
   providers: [],
   bootstrap: [AppComponent]
