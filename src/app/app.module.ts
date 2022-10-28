@@ -4,12 +4,16 @@ import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListsComponent } from './lists/lists.component';
-import { SideBarComponent } from './side-bar/side-bar.component';
-import { TweetCardComponent } from './tweet-card/tweet-card.component';
-import { SearchBarComponent } from './search-bar/search-bar.component';
-import { HomeNavComponent } from './home-nav/home-nav.component';
-import { TrendingSuggestionsComponent } from './trending-suggestions/trending-suggestions.component';
+import { ListsComponent } from './components/lists/lists.component';
+import { SideBarComponent } from './components/side-bar/side-bar.component';
+import { TweetCardComponent } from './components/tweet-card/tweet-card.component';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { HomeNavComponent } from './components/home-nav/home-nav.component';
+import { TrendingSuggestionsComponent } from './components/trending-suggestions/trending-suggestions.component';
+import { SearchComponent } from './components/search/search.component';
+import { ArchiveComponent } from './components/archive/archive.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -19,15 +23,22 @@ import { TrendingSuggestionsComponent } from './trending-suggestions/trending-su
     TweetCardComponent,
     SearchBarComponent,
     HomeNavComponent,
-    TrendingSuggestionsComponent
+    TrendingSuggestionsComponent,
+    SearchComponent,
+    ArchiveComponent,
+    HomePageComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     RouterModule.forRoot([
+      {path: '', component: HomePageComponent},
+      {path: 'welcome', component: WelcomeComponent},
       {path: 'list', component: ListsComponent},
-      {path: 'a', component: TweetCardComponent}
-
+      {path: 'search', component: SearchComponent},
+      {path: 'archives', component: ArchiveComponent},
+      {path: 'settings', component: ArchiveComponent}
     ]),  ],
   providers: [],
   bootstrap: [AppComponent]
