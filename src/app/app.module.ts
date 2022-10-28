@@ -10,6 +10,7 @@ import { TweetCardComponent } from './tweet-card/tweet-card.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { HomeNavComponent } from './home-nav/home-nav.component';
 import { TrendingSuggestionsComponent } from './trending-suggestions/trending-suggestions.component';
+import { EmptyListComponent } from './empty-list/empty-list.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TrendingSuggestionsComponent } from './trending-suggestions/trending-su
     TweetCardComponent,
     SearchBarComponent,
     HomeNavComponent,
-    TrendingSuggestionsComponent
+    TrendingSuggestionsComponent,
+    EmptyListComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
