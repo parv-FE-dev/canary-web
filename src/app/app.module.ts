@@ -14,6 +14,8 @@ import { SearchComponent } from './components/search/search.component';
 import { ArchiveComponent } from './components/archive/archive.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
+import { SettingsComponent } from './components/settings/settings.component';
+import { SettingsPageComponent } from './components/settings-page/settings-page.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
     SearchComponent,
     ArchiveComponent,
     HomePageComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    SettingsComponent,
+    SettingsPageComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -38,7 +42,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
       {path: 'list', component: ListsComponent},
       {path: 'search', component: SearchComponent},
       {path: 'archives', component: ArchiveComponent},
-      {path: 'settings', component: ArchiveComponent}
+      {path: 'settings', component: SettingsPageComponent}
     ]),  ],
   providers: [],
   bootstrap: [AppComponent]
