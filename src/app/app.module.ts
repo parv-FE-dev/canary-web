@@ -13,6 +13,7 @@ import { TrendingSuggestionsComponent } from './trending-suggestions/trending-su
 import { EmptyListComponent } from './empty-list/empty-list.component';
 import { PersonliseFeedComponent } from './personlise-feed/personlise-feed.component';
 import { SuperPrivateListComponent } from './super-private-list/super-private-list.component';
+import { ThreadsComponent } from './threads/threads.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SuperPrivateListComponent } from './super-private-list/super-private-li
     TrendingSuggestionsComponent,
     EmptyListComponent,
     PersonliseFeedComponent,
-    SuperPrivateListComponent
+    SuperPrivateListComponent,
+    ThreadsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
