@@ -11,6 +11,8 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
 import { HomeNavComponent } from './home-nav/home-nav.component';
 import { TrendingSuggestionsComponent } from './trending-suggestions/trending-suggestions.component';
 import { EmptyListComponent } from './empty-list/empty-list.component';
+import { PersonliseFeedComponent } from './personlise-feed/personlise-feed.component';
+import { SuperPrivateListComponent } from './super-private-list/super-private-list.component';
 
 @NgModule({
   declarations: [
@@ -21,15 +23,16 @@ import { EmptyListComponent } from './empty-list/empty-list.component';
     SearchBarComponent,
     HomeNavComponent,
     TrendingSuggestionsComponent,
-    EmptyListComponent
+    EmptyListComponent,
+    PersonliseFeedComponent,
+    SuperPrivateListComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     RouterModule.forRoot([
       {path: 'list', component: ListsComponent},
-      {path: 'a', component: TweetCardComponent}
-
+      {path: 'personlise-feed', component: PersonliseFeedComponent}
     ]),  ],
   providers: [],
   bootstrap: [AppComponent]
