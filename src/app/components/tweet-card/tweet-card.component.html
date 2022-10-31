@@ -5,13 +5,8 @@
             <div class="flex justify-between items-center">
                 <div class="flex items-center">
                     <div>
-                        <img
-                            class="rounded-[50%]"
-                            width="40px"
-                            height="40px"
-                            alt="Tweet image"
-                            src='https://static.plgworks.com/assets/images/hp/tm/parv.png'
-                        />
+                        <img class="rounded-[50%]" width="40px" height="40px" alt="Tweet image"
+                            src='https://static.plgworks.com/assets/images/hp/tm/parv.png' />
                     </div>
                     <div class="pl-[8px]">
                         <div class="text-[14px] text-[#141819] font-semibold">Profile Name</div>
@@ -40,35 +35,35 @@
                 <div class="text-[#14181980] text-[12px] font-normal">10:15</div>
             </div>
             <div class="text-[14px]">
-                lectus quam id leo in vitae turpis massa sed elementum tempus egestas sed sed risus pretium quam vulputate: https://digim.xyz #suspendisse #ante #nibh #mauris
+                lectus quam id leo in vitae turpis massa sed elementum tempus egestas sed sed risus pretium quam
+                vulputate: https://digim.xyz #suspendisse #ante #nibh #mauris
             </div>
-            <img
-                class="rounded-[20px] mt-[12px]"
-                width={655p}
-                height={419}
-                alt="Tweet image"
-                src='https://static.plgworks.com/assets/images/careers/plg-collage-new.png'
-            />
+            <img class="rounded-[20px] mt-[12px]" width={655p} height={419} alt="Tweet image"
+                src='https://static.plgworks.com/assets/images/careers/plg-collage-new.png' />
             <div class="flex justify-between items-center mt-[14px]">
                 <div class="flex items-center">
-                    <div class="flex items-center cursor-pointer">
+                    <div class="flex items-center cursor-pointer" (click)="likeUnlikePost()">
                         <div>
                             <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17.972 5.278c-.263-2.892-2.31-4.99-4.871-4.99-1.707 0-3.27.918-4.149 2.39-.871-1.491-2.37-2.39-4.049-2.39C2.342.287.294 2.384.032 5.277c-.02.127-.106.8.153 1.896.373 1.58 1.235 3.02 2.492 4.158l5.521 5.01c.427.387 1.076.39 1.505.007l5.624-5.017c1.257-1.139 2.119-2.577 2.492-4.158.259-1.096.174-1.769.153-1.896Z" fill="#141819"/>
+                                <path
+                                    d="M17.972 5.278c-.263-2.892-2.31-4.99-4.871-4.99-1.707 0-3.27.918-4.149 2.39-.871-1.491-2.37-2.39-4.049-2.39C2.342.287.294 2.384.032 5.277c-.02.127-.106.8.153 1.896.373 1.58 1.235 3.02 2.492 4.158l5.521 5.01c.427.387 1.076.39 1.505.007l5.624-5.017c1.257-1.139 2.119-2.577 2.492-4.158.259-1.096.174-1.769.153-1.896Z"
+                                    fill="#141819" />
                             </svg>
                         </div>
                         <div class="pl-[4px]">
-                            20
+                            {{likesCount}}
                         </div>
                     </div>
-                    <div class="flex items-center pl-[14px] cursor-pointer">
+                    <div class="flex items-center ml-[14px] cursor-pointer">
                         <div>
                             <svg width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2.938 11.662A2.437 2.437 0 0 1 .5 9.225V2.85A2.438 2.438 0 0 1 2.938.412h10.124A2.437 2.437 0 0 1 15.5 2.85v6.375a2.437 2.437 0 0 1-2.438 2.437H8.76L5 14.475a.938.938 0 0 1-1.499-.75v-2.063h-.563Z" fill="#141819"/>
+                                <path
+                                    d="M2.938 11.662A2.437 2.437 0 0 1 .5 9.225V2.85A2.438 2.438 0 0 1 2.938.412h10.124A2.437 2.437 0 0 1 15.5 2.85v6.375a2.437 2.437 0 0 1-2.438 2.437H8.76L5 14.475a.938.938 0 0 1-1.499-.75v-2.063h-.563Z"
+                                    fill="#141819" />
                             </svg>
                         </div>
                         <div class="pl-[4px]">
-                            20
+                            {{commentCount}}
                         </div>
                     </div>
                 </div>
@@ -76,30 +71,36 @@
                     <!-- Share Icon -->
                     <div class="pr-[16px] cursor-pointer">
                         <svg width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.54.35a.885.885 0 0 0-1.086 0L2.12 4.5a.885.885 0 1 0 1.087 1.397l3.907-3.039v7.676a.885.885 0 0 0 1.77 0V2.858l3.906 3.039A.885.885 0 1 0 13.876 4.5L8.54.35ZM.886 9.65c.489 0 .885.396.885.885v3.561c0 .164.132.296.295.296h11.866a.295.295 0 0 0 .295-.296v-3.561a.885.885 0 1 1 1.77 0v3.561c0 1.141-.925 2.066-2.065 2.066H2.065A2.065 2.065 0 0 1 0 14.095v-3.561c0-.489.396-.885.885-.885Z" fill="#141819"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8.54.35a.885.885 0 0 0-1.086 0L2.12 4.5a.885.885 0 1 0 1.087 1.397l3.907-3.039v7.676a.885.885 0 0 0 1.77 0V2.858l3.906 3.039A.885.885 0 1 0 13.876 4.5L8.54.35ZM.886 9.65c.489 0 .885.396.885.885v3.561c0 .164.132.296.295.296h11.866a.295.295 0 0 0 .295-.296v-3.561a.885.885 0 1 1 1.77 0v3.561c0 1.141-.925 2.066-2.065 2.066H2.065A2.065 2.065 0 0 1 0 14.095v-3.561c0-.489.396-.885.885-.885Z"
+                                fill="#141819" />
                         </svg>
                     </div>
                     <!-- Twitter Icon -->
                     <div class="pr-[16px] cursor-pointer">
                         <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.995 1.486c-2.22.495-3.619 2.563-3.237 4.792l.025.146h-.153c-2.616 0-6.154-1.763-8.011-3.992-.265-.318-.257-.316-.383-.068-.909 1.794-.407 3.948 1.208 5.185l.112.086-.19-.022c-.494-.057-1.043-.215-1.423-.409-.212-.108-.208-.114-.181.269a4.111 4.111 0 0 0 2.836 3.64l.328.107-.227.048c-.268.055-1.055.071-1.32.026-.223-.037-.224-.036-.062.351.554 1.333 1.911 2.339 3.363 2.494l.264.029-.177.134c-1.402 1.07-3.685 1.718-5.457 1.546-.435-.042-.431-.03.097.275 4.167 2.406 9.55 2.016 13.2-.956 2.662-2.168 4.327-5.667 4.33-9.1v-.574l.346-.276c.591-.471 1.763-1.775 1.674-1.863-.01-.01-.148.032-.306.095-.318.126-.846.29-1.148.359-.339.077-.768.146-.735.119.017-.015.132-.102.255-.194.496-.373.927-.91 1.203-1.5.273-.582.284-.573-.319-.27a9.43 9.43 0 0 1-1.797.666l-.3.074-.169-.172c-.827-.843-2.454-1.31-3.646-1.045Z" fill="#141819"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.995 1.486c-2.22.495-3.619 2.563-3.237 4.792l.025.146h-.153c-2.616 0-6.154-1.763-8.011-3.992-.265-.318-.257-.316-.383-.068-.909 1.794-.407 3.948 1.208 5.185l.112.086-.19-.022c-.494-.057-1.043-.215-1.423-.409-.212-.108-.208-.114-.181.269a4.111 4.111 0 0 0 2.836 3.64l.328.107-.227.048c-.268.055-1.055.071-1.32.026-.223-.037-.224-.036-.062.351.554 1.333 1.911 2.339 3.363 2.494l.264.029-.177.134c-1.402 1.07-3.685 1.718-5.457 1.546-.435-.042-.431-.03.097.275 4.167 2.406 9.55 2.016 13.2-.956 2.662-2.168 4.327-5.667 4.33-9.1v-.574l.346-.276c.591-.471 1.763-1.775 1.674-1.863-.01-.01-.148.032-.306.095-.318.126-.846.29-1.148.359-.339.077-.768.146-.735.119.017-.015.132-.102.255-.194.496-.373.927-.91 1.203-1.5.273-.582.284-.573-.319-.27a9.43 9.43 0 0 1-1.797.666l-.3.074-.169-.172c-.827-.843-2.454-1.31-3.646-1.045Z"
+                                fill="#141819" />
                         </svg>
                     </div>
                     <!-- Options Icon -->
                     <div class="pr-[16px] cursor-pointer">
                         <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="3.496" y="2.662" width="3" height="3" rx=".75" fill="#141819"/>
-                            <rect x="9.496" y="3.266" width="9" height="1.8" rx=".9" fill="#141819"/>
-                            <rect x="3.496" y="8.662" width="3" height="3" rx=".75" fill="#141819"/>
-                            <rect x="9.496" y="9.26" width="9" height="1.8" rx=".9" fill="#141819"/>
-                            <rect x="3.496" y="14.662" width="3" height="3" rx=".75" fill="#141819"/>
-                            <rect x="9.496" y="15.26" width="9" height="1.8" rx=".9" fill="#141819"/>
+                            <rect x="3.496" y="2.662" width="3" height="3" rx=".75" fill="#141819" />
+                            <rect x="9.496" y="3.266" width="9" height="1.8" rx=".9" fill="#141819" />
+                            <rect x="3.496" y="8.662" width="3" height="3" rx=".75" fill="#141819" />
+                            <rect x="9.496" y="9.26" width="9" height="1.8" rx=".9" fill="#141819" />
+                            <rect x="3.496" y="14.662" width="3" height="3" rx=".75" fill="#141819" />
+                            <rect x="9.496" y="15.26" width="9" height="1.8" rx=".9" fill="#141819" />
                         </svg>
                     </div>
                     <!-- Bookmark Icon -->
-                    <div class="cursor-pointer">
+                    <div class="cursor-pointer" (click)="saveBookMark()">
                         <svg width="16" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.58 11.514a.72.72 0 0 0-1.062-.038l-5.894 6a.53.53 0 0 1-.908-.37V1.768c0-.49.397-.887.887-.887H14.39c.49 0 .887.397.887.887v14.996a.53.53 0 0 1-.934.344L9.58 11.514Z" stroke="#141819" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path
+                                d="M9.58 11.514a.72.72 0 0 0-1.062-.038l-5.894 6a.53.53 0 0 1-.908-.37V1.768c0-.49.397-.887.887-.887H14.39c.49 0 .887.397.887.887v14.996a.53.53 0 0 1-.934.344L9.58 11.514Z"
+                                stroke="#141819" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </div>
                 </div>
@@ -107,19 +108,14 @@
             </div>
         </div>
     </div>
-    
+
     <div class="rounded-[8px] border-[1px] border-[#14181933] mt-[20px]">
         <div class="p-[15px]">
             <div class="flex justify-between items-center">
                 <div class="flex items-center">
                     <div>
-                        <img
-                            class="rounded-[50%]"
-                            width="40px"
-                            height="40px"
-                            alt="Tweet image"
-                            src='https://static.plgworks.com/assets/images/hp/tm/parv.png'
-                        />
+                        <img class="rounded-[50%]" width="40px" height="40px" alt="Tweet image"
+                            src='https://static.plgworks.com/assets/images/hp/tm/parv.png' />
                     </div>
                     <div class="pl-[8px]">
                         <div class="text-[14px] text-[#141819] font-semibold">Profile Name</div>
@@ -148,21 +144,19 @@
                 <div class="text-[#14181980] text-[12px] font-normal">10:15</div>
             </div>
             <div class="text-[14px]">
-                lectus quam id leo in vitae turpis massa sed elementum tempus egestas sed sed risus pretium quam vulputate: https://digim.xyz #suspendisse #ante #nibh #mauris
+                lectus quam id leo in vitae turpis massa sed elementum tempus egestas sed sed risus pretium quam
+                vulputate: https://digim.xyz #suspendisse #ante #nibh #mauris
             </div>
-            <img
-                class="rounded-[20px] mt-[12px]"
-                width={655p}
-                height={419}
-                alt="Tweet image"
-                src='https://static.plgworks.com/assets/images/careers/plg-collage-new.png'
-            />
+            <img class="rounded-[20px] mt-[12px]" width={655p} height={419} alt="Tweet image"
+                src='https://static.plgworks.com/assets/images/careers/plg-collage-new.png' />
             <div class="flex justify-between items-center mt-[14px]">
                 <div class="flex items-center">
                     <div class="flex items-center cursor-pointer">
                         <div>
                             <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17.972 5.278c-.263-2.892-2.31-4.99-4.871-4.99-1.707 0-3.27.918-4.149 2.39-.871-1.491-2.37-2.39-4.049-2.39C2.342.287.294 2.384.032 5.277c-.02.127-.106.8.153 1.896.373 1.58 1.235 3.02 2.492 4.158l5.521 5.01c.427.387 1.076.39 1.505.007l5.624-5.017c1.257-1.139 2.119-2.577 2.492-4.158.259-1.096.174-1.769.153-1.896Z" fill="#141819"/>
+                                <path
+                                    d="M17.972 5.278c-.263-2.892-2.31-4.99-4.871-4.99-1.707 0-3.27.918-4.149 2.39-.871-1.491-2.37-2.39-4.049-2.39C2.342.287.294 2.384.032 5.277c-.02.127-.106.8.153 1.896.373 1.58 1.235 3.02 2.492 4.158l5.521 5.01c.427.387 1.076.39 1.505.007l5.624-5.017c1.257-1.139 2.119-2.577 2.492-4.158.259-1.096.174-1.769.153-1.896Z"
+                                    fill="#141819" />
                             </svg>
                         </div>
                         <div class="pl-[4px]">
@@ -172,7 +166,9 @@
                     <div class="flex items-center pl-[14px] cursor-pointer">
                         <div>
                             <svg width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2.938 11.662A2.437 2.437 0 0 1 .5 9.225V2.85A2.438 2.438 0 0 1 2.938.412h10.124A2.437 2.437 0 0 1 15.5 2.85v6.375a2.437 2.437 0 0 1-2.438 2.437H8.76L5 14.475a.938.938 0 0 1-1.499-.75v-2.063h-.563Z" fill="#141819"/>
+                                <path
+                                    d="M2.938 11.662A2.437 2.437 0 0 1 .5 9.225V2.85A2.438 2.438 0 0 1 2.938.412h10.124A2.437 2.437 0 0 1 15.5 2.85v6.375a2.437 2.437 0 0 1-2.438 2.437H8.76L5 14.475a.938.938 0 0 1-1.499-.75v-2.063h-.563Z"
+                                    fill="#141819" />
                             </svg>
                         </div>
                         <div class="pl-[4px]">
@@ -184,30 +180,36 @@
                     <!-- Share Icon -->
                     <div class="pr-[16px] cursor-pointer">
                         <svg width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.54.35a.885.885 0 0 0-1.086 0L2.12 4.5a.885.885 0 1 0 1.087 1.397l3.907-3.039v7.676a.885.885 0 0 0 1.77 0V2.858l3.906 3.039A.885.885 0 1 0 13.876 4.5L8.54.35ZM.886 9.65c.489 0 .885.396.885.885v3.561c0 .164.132.296.295.296h11.866a.295.295 0 0 0 .295-.296v-3.561a.885.885 0 1 1 1.77 0v3.561c0 1.141-.925 2.066-2.065 2.066H2.065A2.065 2.065 0 0 1 0 14.095v-3.561c0-.489.396-.885.885-.885Z" fill="#141819"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8.54.35a.885.885 0 0 0-1.086 0L2.12 4.5a.885.885 0 1 0 1.087 1.397l3.907-3.039v7.676a.885.885 0 0 0 1.77 0V2.858l3.906 3.039A.885.885 0 1 0 13.876 4.5L8.54.35ZM.886 9.65c.489 0 .885.396.885.885v3.561c0 .164.132.296.295.296h11.866a.295.295 0 0 0 .295-.296v-3.561a.885.885 0 1 1 1.77 0v3.561c0 1.141-.925 2.066-2.065 2.066H2.065A2.065 2.065 0 0 1 0 14.095v-3.561c0-.489.396-.885.885-.885Z"
+                                fill="#141819" />
                         </svg>
                     </div>
                     <!-- Twitter Icon -->
                     <div class="pr-[16px] cursor-pointer">
                         <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.995 1.486c-2.22.495-3.619 2.563-3.237 4.792l.025.146h-.153c-2.616 0-6.154-1.763-8.011-3.992-.265-.318-.257-.316-.383-.068-.909 1.794-.407 3.948 1.208 5.185l.112.086-.19-.022c-.494-.057-1.043-.215-1.423-.409-.212-.108-.208-.114-.181.269a4.111 4.111 0 0 0 2.836 3.64l.328.107-.227.048c-.268.055-1.055.071-1.32.026-.223-.037-.224-.036-.062.351.554 1.333 1.911 2.339 3.363 2.494l.264.029-.177.134c-1.402 1.07-3.685 1.718-5.457 1.546-.435-.042-.431-.03.097.275 4.167 2.406 9.55 2.016 13.2-.956 2.662-2.168 4.327-5.667 4.33-9.1v-.574l.346-.276c.591-.471 1.763-1.775 1.674-1.863-.01-.01-.148.032-.306.095-.318.126-.846.29-1.148.359-.339.077-.768.146-.735.119.017-.015.132-.102.255-.194.496-.373.927-.91 1.203-1.5.273-.582.284-.573-.319-.27a9.43 9.43 0 0 1-1.797.666l-.3.074-.169-.172c-.827-.843-2.454-1.31-3.646-1.045Z" fill="#141819"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.995 1.486c-2.22.495-3.619 2.563-3.237 4.792l.025.146h-.153c-2.616 0-6.154-1.763-8.011-3.992-.265-.318-.257-.316-.383-.068-.909 1.794-.407 3.948 1.208 5.185l.112.086-.19-.022c-.494-.057-1.043-.215-1.423-.409-.212-.108-.208-.114-.181.269a4.111 4.111 0 0 0 2.836 3.64l.328.107-.227.048c-.268.055-1.055.071-1.32.026-.223-.037-.224-.036-.062.351.554 1.333 1.911 2.339 3.363 2.494l.264.029-.177.134c-1.402 1.07-3.685 1.718-5.457 1.546-.435-.042-.431-.03.097.275 4.167 2.406 9.55 2.016 13.2-.956 2.662-2.168 4.327-5.667 4.33-9.1v-.574l.346-.276c.591-.471 1.763-1.775 1.674-1.863-.01-.01-.148.032-.306.095-.318.126-.846.29-1.148.359-.339.077-.768.146-.735.119.017-.015.132-.102.255-.194.496-.373.927-.91 1.203-1.5.273-.582.284-.573-.319-.27a9.43 9.43 0 0 1-1.797.666l-.3.074-.169-.172c-.827-.843-2.454-1.31-3.646-1.045Z"
+                                fill="#141819" />
                         </svg>
                     </div>
                     <!-- Options Icon -->
                     <div class="pr-[16px] cursor-pointer">
                         <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="3.496" y="2.662" width="3" height="3" rx=".75" fill="#141819"/>
-                            <rect x="9.496" y="3.266" width="9" height="1.8" rx=".9" fill="#141819"/>
-                            <rect x="3.496" y="8.662" width="3" height="3" rx=".75" fill="#141819"/>
-                            <rect x="9.496" y="9.26" width="9" height="1.8" rx=".9" fill="#141819"/>
-                            <rect x="3.496" y="14.662" width="3" height="3" rx=".75" fill="#141819"/>
-                            <rect x="9.496" y="15.26" width="9" height="1.8" rx=".9" fill="#141819"/>
+                            <rect x="3.496" y="2.662" width="3" height="3" rx=".75" fill="#141819" />
+                            <rect x="9.496" y="3.266" width="9" height="1.8" rx=".9" fill="#141819" />
+                            <rect x="3.496" y="8.662" width="3" height="3" rx=".75" fill="#141819" />
+                            <rect x="9.496" y="9.26" width="9" height="1.8" rx=".9" fill="#141819" />
+                            <rect x="3.496" y="14.662" width="3" height="3" rx=".75" fill="#141819" />
+                            <rect x="9.496" y="15.26" width="9" height="1.8" rx=".9" fill="#141819" />
                         </svg>
                     </div>
                     <!-- Bookmark Icon -->
                     <div class="cursor-pointer">
                         <svg width="16" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.58 11.514a.72.72 0 0 0-1.062-.038l-5.894 6a.53.53 0 0 1-.908-.37V1.768c0-.49.397-.887.887-.887H14.39c.49 0 .887.397.887.887v14.996a.53.53 0 0 1-.934.344L9.58 11.514Z" stroke="#141819" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path
+                                d="M9.58 11.514a.72.72 0 0 0-1.062-.038l-5.894 6a.53.53 0 0 1-.908-.37V1.768c0-.49.397-.887.887-.887H14.39c.49 0 .887.397.887.887v14.996a.53.53 0 0 1-.934.344L9.58 11.514Z"
+                                stroke="#141819" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </div>
                 </div>
@@ -216,3 +218,46 @@
         </div>
     </div>
 </div>
+<div *ngIf="showModal"
+    class="overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center flex w-full">
+    <div class="absolute inset-x-0 bottom-0">
+        <!--content-->
+        <div class="border-0 rounded-t-[20px] flex flex-col w-full bg-white outline-none focus:outline-none">
+            <!--header-->
+            <div class="font-semibold text-[16px] leading-[21px] text-center mt-[20px] mb-[80px]">
+                Add user to Lists
+            </div>
+            <!--body-->
+            <div class="flex justify-center">
+                <svg width="124" height="124" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="124" height="124" rx="7.75" fill="#FED05B" fill-opacity=".5" />
+                    <rect x="23.25" y="23.25" width="15.5" height="15.5" rx="3.875" fill="#fff" />
+                    <rect x="54.25" y="26.354" width="46.5" height="9.3" rx="4.65" fill="#fff" />
+                    <rect x="23.25" y="54.25" width="15.5" height="15.5" rx="3.875" fill="#fff" />
+                    <rect x="54.25" y="57.353" width="46.5" height="9.3" rx="4.65" fill="#fff" />
+                    <rect x="23.25" y="85.25" width="15.5" height="15.5" rx="3.875" fill="#fff" />
+                    <rect x="54.25" y="88.353" width="46.5" height="9.3" rx="4.65" fill="#fff" />
+                </svg>
+            </div>
+            <div class="mt-[20px] font-semibold text-[16px] leading-[20px] text-center">
+                Stay up-to-date on the favorite topics by <br /> users you love, without being tracked 😉
+            </div>
+            <!--footer-->
+            <div class="flex items-center justify-center mt-[20px] pb-[20px]">
+                <a class="mt-[20px] bg-[#FEC244] rounded-[46px] flex justify-center cursor-pointer px-[115px] py-[13px]">
+                    <div class="py-[11px] flex items-center">
+                        <span>
+                            <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.19.06a.858.858 0 0 0-.403.387c-.067.129-.07.25-.07 2.954V6.22H3.898c-2.702 0-2.824.002-2.954.069a.793.793 0 0 0 0 1.424c.13.067.252.07 2.954.07h2.82v2.819c0 2.703.002 2.825.069 2.954a.793.793 0 0 0 1.424 0c.067-.13.07-.251.07-2.954v-2.82H11.1c2.702 0 2.824-.002 2.953-.069a.793.793 0 0 0 0-1.424c-.129-.067-.25-.07-2.954-.07H8.28V3.4C8.28.699 8.278.577 8.211.448 8.018.07 7.563-.101 7.19.06Z"
+                                    fill="#141819" />
+                            </svg>
+                        </span>
+                        <span class="ml-[5px]">Add a new Archive</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="showModal" class="opacity-25 fixed inset-0 z-40 bg-black"></div>

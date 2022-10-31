@@ -16,6 +16,7 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { SettingsPageComponent } from './components/settings-page/settings-page.component';
+import { ArchiveListsComponent } from './components/archive-lists/archive-lists.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { SettingsPageComponent } from './components/settings-page/settings-page.
     HomePageComponent,
     WelcomeComponent,
     SettingsComponent,
-    SettingsPageComponent
+    SettingsPageComponent,
+    ArchiveListsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
