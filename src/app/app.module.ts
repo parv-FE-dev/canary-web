@@ -14,6 +14,13 @@ import { EmptyListComponent } from './components/empty-list/empty-list.component
 import { PersonliseFeedComponent } from './components/personlise-feed/personlise-feed.component';
 import { SuperPrivateListComponent } from './components/super-private-list/super-private-list.component';
 import { ThreadsComponent } from './components/threads/threads.component';
+import { SearchComponent } from './components/search/search.component';
+import { ArchiveComponent } from './components/archive/archive.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
+import { SettingsComponent } from './components/settings/settings.component';
+import { SettingsPageComponent } from './components/settings-page/settings-page.component';
+import { ArchiveListsComponent } from './components/archive-lists/archive-lists.component';
 
 @NgModule({
   declarations: [
@@ -27,14 +34,26 @@ import { ThreadsComponent } from './components/threads/threads.component';
     EmptyListComponent,
     PersonliseFeedComponent,
     SuperPrivateListComponent,
-    ThreadsComponent
+    ThreadsComponent,
+    SearchComponent,
+    ArchiveComponent,
+    HomePageComponent,
+    WelcomeComponent,
+    SettingsComponent,
+    SettingsPageComponent,
+    ArchiveListsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     RouterModule.forRoot([
+      {path: '', component: HomePageComponent},
+      {path: 'welcome', component: WelcomeComponent},
       {path: 'list', component: ListsComponent},
-      {path: 'personlise-feed', component: PersonliseFeedComponent}
+      {path: 'personlise-feed', component: PersonliseFeedComponent},
+      {path: 'search', component: SearchComponent},
+      {path: 'archives', component: ArchiveComponent},
+      {path: 'settings', component: SettingsPageComponent}
     ]),  ],
   providers: [],
   bootstrap: [AppComponent]
