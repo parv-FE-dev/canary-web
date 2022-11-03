@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {networkConnection} from '../NetworkConnection';
+// import {networkConnection} from '../NetworkConnection';
 import {RequestType} from './RequestObject';
 import {environment} from '../../../environments/environment.prod';
 export class APIService {
@@ -96,7 +96,10 @@ export class APIService {
    * @returns boolean
    */
   isInternetConnected() {
-    return networkConnection().isConnected;
+
+    const isConnected = navigator.onLine;
+    return Boolean(isConnected);
+    
   }
   /**
    * This function gets the reponse object when internet is not connected.

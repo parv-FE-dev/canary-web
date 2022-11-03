@@ -9,9 +9,7 @@ import TwitterApi from '../../../api/helpers/TwitterApi';
 export class HomePageComponent implements OnInit {
 
   constructor() { 
-    TwitterApi.getUserByUserName(
-      "parv_94"
-    );
+    TwitterApi.timelineFeed(false);
     console.log("Checking data", TwitterApi.timelineFeed(
       false
     ))
