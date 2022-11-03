@@ -1,0 +1,15 @@
+export const anc = "a";
+export const bnf = "a";
+export const careers = "a";
+export const food = "a";
+export const gaming = "a";
+export const entertainment = "a";
+export const mnts = "a";
+export const fitness = "a";
+export const music = "a";
+export const outdoors = "a";
+export const technology = "a";
+export const weather = "a";
+export const travel = "a";
+export const sports = "a";
+export const science = "a";

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit, Injectable } from '@angular/core';
 
 @Component({
   selector: 'app-tweet-card',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tweet-card.component.scss']
 })
 export class TweetCardComponent implements OnInit {
+
+  private _url: string = 'https://api.twitter.com/2/tweets/search/recent'
+  private _name: string = "Saxena";
 
   public likesCount = 0;
   public commentCount: number;
@@ -21,10 +25,15 @@ export class TweetCardComponent implements OnInit {
       this.likesCount--;
     }
   }
+
+  tweetDetails() {
+    
+  }
+
   saveBookMark(){
     this.showModal = !this.showModal;  
   }
-  constructor() { this.likesCount; this.commentCount = 0 }
+  constructor(private http: HttpClient) { this.likesCount; this.commentCount = 0 }
 
   ngOnInit(): void {
   }

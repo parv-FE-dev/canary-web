@@ -28,3 +28,4 @@ webpack.records.json
 *.metadata.json
 *.shim.ngstyle.ts
 .angular
+src/environments/environment.prod.ts
