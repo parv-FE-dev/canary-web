@@ -1,0 +1,47 @@
+.card-one {
+    background-color: #FFFBBE;
+    color: #FEC244;
+    height: 218px;
+    width: 218px;
+    border-radius: 15px;
+}
+
+.card-two {
+    background-color: #2B2F30;
+    color: #FED05B;
+    height: 218px;
+    width: 218px;
+    border-radius: 15px;
+}
+
+.card-three {
+    background-color: #FED56B;
+    color: #141819;
+    height: 218px;
+    width: 218px;
+    border-radius: 15px;
+}
+
+.card-four {
+    background-color: #FEC857;
+    color: #141819;
+    height: 218px;
+    width: 218px;
+    border-radius: 15px;
+}
+
+.card-five {
+    background-color: #FEC857;
+    color: #FFFBBE;
+    height: 218px;
+    width: 218px;
+    border-radius: 15px;
+}
+
+.content-position {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
